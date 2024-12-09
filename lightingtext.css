@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(6, 107, 107);
+}
+h1{
+    position: relative;
+    font-size: 6em;
+    color: aquamarine;
+    outline: none;
+    width: 100%;
+    /* background: #07252d; */
+    text-align: center;
+    line-height: 0.70em;
+    letter-spacing: 15px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, grey);
+    animation: manish 5s linear infinite;
+}
+@keyframes manish{
+    0%,18%,20%,50.1%,60%,65.1%,80.1%,90.1%,92%
+    {
+       color: aqua;
+       text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px aqua,
+                     0 0 25px aqua,
+                     0 0 45px aqua,
+                     0 0 80px aqua,
+                     0 0 100px aqua;
+    }
+}
